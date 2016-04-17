@@ -1,0 +1,39 @@
+#welcome{
+  color: #1d62aa;
+}
+
+.jumbotron{
+  text-align: center;
+  /*background-image: url('indexbackground.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  height: 250px;
+}
+
+#jumbo{
+  margin-top: .5em;
+  color: #1d62aa;
+}
+
+#footer{
+  border-top: thin double #1d62aa ;
+  margin-top: 5em;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  color: #1d62aa ;
+}
+
+#footer ul{
+  padding:0;
+  margin: 0;
+}
+
+#footer li{
+  display: inline-block;
+}
+
+#copy{
+  font-size: x-small;
+}

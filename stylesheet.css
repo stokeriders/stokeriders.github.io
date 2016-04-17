@@ -2,17 +2,113 @@ body,
 html {
     width: 100%;
     height: 100%;
+    font-family: 'Philosopher', sans-serif;
 }
 
 #welcome{
-  color: #1d62aa;
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+}
+
+#services-title{
+  text-align: center;
+  background-color: #f8f8f8;
+  padding-bottom: 55px;
 }
 
 .navbar {
-  margin-bottom: 0;
-  -webkit-box-shadow: -1px 8px 18px 3px rgba(105,105,105,0.84);
-  -moz-box-shadow: -1px 8px 18px 3px rgba(105,105,105,0.84);
-  box-shadow: -1px 8px 18px 3px rgba(105,105,105,0.84);
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar.past-main {
+  background-color:black;
+  color: black;
+  -webkit-box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+  -moz-box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+  box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+}
+
+.navbar-default {
+  background-color: #222222;
+  border-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: #fed136;
+  font-family: 'Pacifico', cursive;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #fec503;
+}
+.navbar-default .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+.navbar-default .navbar-toggle {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fed136;
+}
+.navbar-default .nav li a {
+  font-family: 'Philosopher', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1.3em;
+}
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 1.5em;
+}
+.navbar-default .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #fed136;
+}
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #fec503;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+  .navbar-default.navbar-shrink {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
 }
 
 .header-container{
@@ -21,7 +117,6 @@ html {
   border-left: none;
   border-right: none;
   position: relative;
-  padding: 20px;
 }
 
 .video-container{
@@ -38,6 +133,12 @@ video{
   z-index: -1
   opacity: 0.78;
   width: 100%;
+}
+
+#mute-button, #volume-button{
+  color: white;
+  padding-top: 700px;
+  font-size: 40px;
 }
 
 .content-section-a {
@@ -65,27 +166,44 @@ video{
   margin: auto;
 }
 
+.img-responsive{
+  border-radius: 12px;
+  width: 500px;
+  height: 250px;
+}
 
-
-#footer{
-  border-top: thin double #1d62aa ;
-  margin-top: 5em;
-  position: relative;
-  width: 100%;
-  bottom: 0;
+footer {
+  padding: 25px 0;
   text-align: center;
-  color: #1d62aa ;
+}
+footer span.copyright {
+  line-height: 40px;
+  font-family: 'Pacifico', cursive;
+  text-transform: uppercase;
+  text-transform: none;
+  font-size: small;
 }
 
-#footer ul{
-  padding:0;
-  margin: 0;
+ul.social-buttons {
+  margin-bottom: 0;
 }
-
-#footer li{
-  display: inline-block;
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  padding-top: 15px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
-
-#copy{
-  font-size: x-small;
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: gray;
 }
