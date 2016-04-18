@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+
 	$("#mute-button").on("click",function(){
 			var vid = document.getElementById("myVideo");
 			vid.muted = true;
