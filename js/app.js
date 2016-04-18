@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
+	$(".serve").on("click", function(){
+		$("#serivce-link").addClass("active")
+	})
+
 	$("#mute-button").on("click",function(){
 			var vid = document.getElementById("myVideo");
 			vid.muted = true;
@@ -23,10 +27,6 @@ $( document ).ready(function() {
 		$("#volume-button").hide();
 		$(".navbar").addClass('after-video');
 	}
-
-	$(".serve").on("click", function(){
-		$("#serivce-link").addClass("active")
-	})
 
 	var mainbottom = $('#services-content').offset().top + $('#services-content').height();
 
