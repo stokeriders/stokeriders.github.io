@@ -4,57 +4,124 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+  <link href='https://fonts.googleapis.com/css?family=Philosopher|Pacifico' rel='stylesheet' type='text/css'>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="meet.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/meet.css"> 
+  
 </head>
 <body>
-   <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container topnav">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-          </button>
-        <h3 id = "welcome"> Stoke Riders </h3>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id = "welcome" class="navbar-brand topnav" href="index.html">Stoke Riders</a>
       </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navigationbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="gear.html">Gear</a></li>
-            <li class = "active"><a href="meet.html">Meet Tyler</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav nav-pills navbar-nav navbar-right">
+          <li>
+              <a href="index.html#services">Services</a>
+          </li>
+          <li>
+              <a href="gear.html">Gear</a>
+          </li>
+          <li class = "active">
+              <a href="meet.html">Meet Tyler</a>
+          </li>
+          <li>
+              <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="jumbotron">
-    <h1 id = "jumbo">Meet Tyler!</h1>
-  </div>
+  <header id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
 
-  <div class="container">
-    <div class="col-xs-12 col-md-12">
-      <p> Tyler Spence is an IKO certified kiteboarding instructor from Chicago and has been instructing since 2013.  He was inspired to start kiteboarding after a trip to Cabarete in the Domincan Republic where he found himself at one of the most popular kiteboarding destinations in the Caribbean.  He was then fortunate enough to have gotten hooked on kiting on the windy shores of Lake Michigan and share the stoke with his fellow students around the Midwest. </p>
+    <div class="carousel-inner">
+        <div class="item active">
+          <div class="fill" style="background-image:url('img/tywaves.jpg');"></div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('img/buggykitview.jpg');"></div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('img/prettykiteskyline.jpg');"></div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('img/snowkiting.jpg');"></div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('img/coupleskiteboarding.jpg');"></div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+
+  </header>
+
+
+
+  <div class = "container">
+    <div class = "col-lg-12 col-lg-12 col-lg-12">
+      <h1 id = "ty-info"> Meet Tyler </h1>
+        <h3>Tyler Spence is an IKO certified kiteboarding instructor from Chicago and has been instructing since 2013.  He was inspired to start kiteboarding after a trip to Cabarete in the Domincan Republic where he found himself at one of the most popular kiteboarding destinations in the Caribbean.  He was then fortunate enough to have gotten hooked on kiting on the windy shores of Lake Michigan and share the stoke with his fellow students around the Midwest.</h3>
+
+
+        <h2 id = "vid-info">Want to know what Kiteboarding is like? Checkout these Point Of View Videos!</h2>
+      <video id = "kitevideo" controls poster = "img/videoshot.png">
+        <source src = "video/kiteboard.mp4" type = "video/mp4">
+      </video>
+
+      <video id = "fogvideo" controls poster = "img/fogposter.png">
+        <source src="video/fogvideo.mp4" type = "video/mp4">
+      </video>
     </div>
   </div>
+</div>
 
-   <div id = "footer">
-    <ul>
-      <h2> Call now to book a lesson! </h2>
-      <li><h4>312-952-0888 | </h4></li> 
-      <li><h4><a href="mailto:info@stokeriders.com?Subject=Interest%20in%20lessons" target="_top">info@stokeriders.com</a></h4></li>
-    </ul>
-    <br>
-    <p id = "copy">Laura Evans 2016 &copy;</p>
-  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Call now to book a lesson! </h2>
+          <ul class="list-inline social-buttons">
+            <li class ="phone"><i class="fa fa-phone-square">:312-952-0888</i></li>
+            <li><a href="mailto:info@stokeriders.com?Subject=Interested%20in%20lessons!" target="_top"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li><a href="https://www.facebook.com/lakemichigankiteboardinglessons/?fref=ts"><i class="fa fa-facebook-square"></i></a>
+            </li> 
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <span class="copyright">Copyright &copy; Laura Evans 2016</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

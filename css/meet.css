@@ -1,39 +1,191 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Philosopher', sans-serif;
+}
+
+/*Navbar begin*/
+
 #welcome{
-  color: #1d62aa;
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
 }
 
-.jumbotron{
+.navbar-default {
+  background-color:black;
+  padding: 25px 0;
+  -webkit-box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+  -moz-box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+  box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+  line-height:0px;
+  display: block;
+}
+
+.navbar-default .navbar-brand {
+  color: #C7C7C7;
+  font-family: 'Pacifico', cursive;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #C7C7C7;
+}
+.navbar-default .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+.navbar-default .navbar-toggle {
+  background-color: #C7C7C7;
+  border-color: #fed136;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #C7C7C7;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #C7C7C7;
+}
+.navbar-default .nav li a {
+  font-family: 'Philosopher', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1.3em;
+}
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 1.5em;
+}
+.navbar-default .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #C7C7C7;
+}
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #C7C7C7;
+}
+
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: black;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+  .navbar-default.navbar-shrink {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+/*Navbar end*/
+
+
+.carousel {
+    height: 80%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#ty-info, #vid-info, #ready-info{
+  margin-top: 50px;
   text-align: center;
-  /*background-image: url('indexbackground.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  height: 250px;
 }
 
-#jumbo{
-  margin-top: .5em;
-  color: #1d62aa;
+#ty-photo{
+  height: 1000px;
+  width: 600px;
 }
 
-#footer{
-  border-top: thin double #1d62aa ;
-  margin-top: 5em;
-  position: relative;
-  width: 100%;
-  bottom: 0;
+#kitevideo, #fogvideo{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+
+/*Footer*/
+
+footer {
+  margin-top: 25px;
   text-align: center;
-  color: #1d62aa ;
+  border-top: 5px double black;
+}
+footer span.copyright {
+  line-height: 40px;
+  font-family: 'Pacifico', cursive;
+  text-transform: uppercase;
+  text-transform: none;
+  font-size: small;
+  padding: 1em;
 }
 
-#footer ul{
-  padding:0;
-  margin: 0;
+ul.social-buttons {
+  margin-bottom: 0;
 }
 
-#footer li{
-  display: inline-block;
+li.phone{
+  margin-bottom: 10px;
+  height:50px;
+  width:100%;
+  font-size: 30px;
 }
 
-#copy{
-  font-size: x-small;
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  padding-top: 15px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #C7C7C7;
 }

@@ -36,28 +36,28 @@ html {
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: #fed136;
+  color: #C7C7C7;
   font-family: 'Pacifico', cursive;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #fec503;
+  color: #C7C7C7;
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-default .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: #C7C7C7;
 }
 .navbar-default .nav li a {
   font-family: 'Philosopher', sans-serif;
@@ -77,12 +77,12 @@ html {
 .navbar-default .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #fed136;
+  background-color: #C7C7C7;
 }
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  background-color: #C7C7C7;
 }
 @media (min-width: 768px) {
   .navbar-default {
@@ -166,6 +166,15 @@ video{
   margin: auto;
 }
 
+#meet-button{
+  margin:auto;
+}
+
+.ready-info{
+  margin-top: 100px;
+  font-family: 'Pacifico', cursive;
+}
+
 .img-responsive{
   border-radius: 12px;
   width: 500px;
@@ -173,8 +182,9 @@ video{
 }
 
 footer {
-  padding: 25px 0;
+  margin-top: 25px;
   text-align: center;
+  border-top: 5px double black;
 }
 footer span.copyright {
   line-height: 40px;
@@ -182,10 +192,18 @@ footer span.copyright {
   text-transform: uppercase;
   text-transform: none;
   font-size: small;
+  padding: 1em;
 }
 
 ul.social-buttons {
   margin-bottom: 0;
+}
+
+li.phone{
+  margin-bottom: 10px;
+  height:50px;
+  width:100%;
+  font-size: 30px;
 }
 ul.social-buttons li a {
   display: block;
@@ -202,8 +220,9 @@ ul.social-buttons li a {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: gray;
+  background-color: #C7C7C7;
 }
