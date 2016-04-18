@@ -31,6 +31,15 @@ html {
   box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
 }
 
+.navbar.after-video{
+  background-color:black;
+  color: black;
+  opacity: 0.70;
+  -webkit-box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+  -moz-box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+  box-shadow: -1px 9px 18px 3px rgba(105,105,105,0.84);
+}
+
 .navbar-default {
   background-color: #222222;
   border-color: transparent;
