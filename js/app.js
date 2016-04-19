@@ -4,14 +4,16 @@ $( document ).ready(function() {
 		$("#serivce-link").addClass("active")
 	})
 
-	$("#mute-button").on("click",function(){
+	$("#mute-button").on("click",function(event){
+		event.preventDefault();
 			var vid = document.getElementById("myVideo");
 			vid.muted = true;
 			$(this).toggle();
 			$("#volume-button").css('display', 'block');
 	});
 
-	$("#volume-button").on("click", function(){
+	$("#volume-button").on("click", function(event){
+		event.preventDefault();
 		var vid = document.getElementById("myVideo");
 			vid.muted = false;
 			$(this).toggle();
@@ -29,7 +31,8 @@ $( document ).ready(function() {
 		$("#play-again-button").css('display', 'block')
 	}
 
-	$("#play-again-button").on("click", function(){
+	$("#play-again-button").on("click", function(event){
+		event.preventDefault();
 		var vid = document.getElementById("myVideo");
 		$(".navbar").removeClass('after-video');
 		$("#logoimg").css('display', 'none');
@@ -40,12 +43,13 @@ $( document ).ready(function() {
 	});
 
 	$("#play-again-button").on("mouseover", function(){
-    $("#msg_div").show();
-});
+    $("#msg_div").css('display', 'inline-block')
+	}).mouseleave(function() {
+    $( "#msg_div" ).css('display', 'none')
+  });
 
 	var mainbottom = $('#services-content').offset().top + $('#services-content').height();
-
-// on scroll, 
+ 
 	$(window).on('scroll',function(){
 		var vid = document.getElementById("myVideo");
 

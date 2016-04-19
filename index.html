@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Philosopher|Pacifico' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
   <script type="text/javascript" src="js/app.js"></script>
@@ -53,14 +53,14 @@
 <!-- Header -->
 <div class = "header-container">
   <div class = "video-container">
-    <video id = "myVideo" autoplay poster = "img/stokeriders.png">
+    <video id = "myVideo" autoplay muted poster = "img/stokeriders.png">
       <source src = "video/video.mp4" type = "video/mp4">
     </video>
     <img id = "logoimg" src = "img/picture.jpg" alt = "Stoke Riders Logo" style = "display: none;">
   </div>
-  <span id = "mute-button" class = "glyphicon glyphicon-volume-off" aria-hidden="true"></span>
-  <span id = "volume-button" class = "glyphicon glyphicon-volume-up"  style = "display: none;" aria-hidden="true"></span>
-  <span id = "play-again-button" class = "glyphicon glyphicon-repeat"  style = "display: none;" aria-hidden="true"></span>
+  <div id = "mute-button" class = "glyphicon glyphicon-volume-off" aria-hidden="true"></div>
+  <div id = "volume-button" class = "glyphicon glyphicon-volume-up"  style = "display: none;" aria-hidden="true"></div>
+  <div id = "play-again-button" class = "glyphicon glyphicon-repeat"  style = "display: none;" aria-hidden="true"><div id = "msg_div" style = "display: none">Watch video</div></div>
   <div id = "services-content"></div>
 </div>
 
