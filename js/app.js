@@ -7,14 +7,14 @@ $( document ).ready(function() {
 	$("#mute-button").on("click",function(){
 			var vid = document.getElementById("myVideo");
 			vid.muted = true;
-			$(this).hide();
+			$(this).toggle();
 			$("#volume-button").css('display', 'block');
 	});
 
 	$("#volume-button").on("click", function(){
 		var vid = document.getElementById("myVideo");
 			vid.muted = false;
-			$(this).hide();
+			$(this).toggle();
 			$("#mute-button").css('display', 'block');
 	});
 
@@ -26,7 +26,22 @@ $( document ).ready(function() {
 		$("#mute-button").hide();
 		$("#volume-button").hide();
 		$(".navbar").addClass('after-video');
+		$("#play-again-button").css('display', 'block')
 	}
+
+	$("#play-again-button").on("click", function(){
+		var vid = document.getElementById("myVideo");
+		$(".navbar").removeClass('after-video');
+		$("#logoimg").css('display', 'none');
+		$(vid).show();
+		$(vid).load();	
+		$(this).hide();
+		$("#mute-button").show();
+	});
+
+	$("#play-again-button").on("mouseover", function(){
+    $("#msg_div").show();
+});
 
 	var mainbottom = $('#services-content').offset().top + $('#services-content').height();
 

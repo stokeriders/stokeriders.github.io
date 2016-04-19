@@ -144,7 +144,7 @@ video{
   width: 100%;
 }
 
-#mute-button, #volume-button{
+#mute-button, #volume-button, #play-again-button{
   color: white;
   padding-top: 700px;
   font-size: 40px;
