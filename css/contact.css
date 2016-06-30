@@ -13,6 +13,8 @@ html {
   font-size: 5em;
 }
 
+.navbar {  border: none!important; }
+
 .navbar-default {
   background-color:black;
   padding: 25px 0;
