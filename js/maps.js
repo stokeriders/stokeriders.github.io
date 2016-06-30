@@ -60,3 +60,35 @@
  		warrenmap.setCenter(marker.getPosition());
  	});
  }
+
+ //silverbeach map and marker
+
+  var autosilver = new google.maps.places.Autocomplete(
+ 		(document.getElementById('autocomplete-silver')), {
+ 			types: ['geocode']
+ 	});
+
+ 	var silverdiv = document.getElementById('silver-map');
+ 	var silver = {lat: 41.9035673, lng: -86.5972425}
+
+ 	var silvermap = new google.maps.Map(silverdiv, {
+ 		center: silver,
+ 		zoom: 10
+ 	});
+
+ 	var marker = new google.maps.Marker({
+ 		position: silver,
+ 		map: silvermap
+ 	});
+
+ 	silvermap.addListener('center_changed', function() {
+	    window.setTimeout(function() {
+    	silvermap.panTo(marker.getPosition());
+    }, 5000);
+  });
+
+ 	marker.addListener('click', function() {
+ 		silvermap.setZoom(15);
+ 		silvermap.setCenter(marker.getPosition());
+ 	});
+ }
