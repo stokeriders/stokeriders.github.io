@@ -156,3 +156,11 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #C7C7C7;
 }
+
+@media (max-width: 767px) {
+
+  #welcome{
+    font-size:1.5em;
+  }
+
+}
