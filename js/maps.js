@@ -92,4 +92,35 @@
  	silvermap.setCenter(marker.getPosition());
  });
 
+ //Tiscornia Park
+
+  var autotiscornia = new google.maps.places.Autocomplete(
+ 	(document.getElementById('autocomplete-tiscornia')), {
+ 		types: ['geocode']
+ 	});
+
+ var tiscorniadiv = document.getElementById('tiscornia-map');
+ var tiscornia = {lat: 42.1148612, lng: -86.4874102}
+
+ var tiscorniamap = new google.maps.Map(tiscorniadiv, {
+ 	center: tiscornia,
+ 	zoom: 10
+ });
+
+ var marker = new google.maps.Marker({
+ 	position: tiscornia,
+ 	map: tiscorniamap
+ });
+
+ tiscorniamap.addListener('center_changed', function() {
+ 	window.setTimeout(function() {
+ 		tiscorniamap.panTo(marker.getPosition());
+ 	}, 5000);
+ });
+
+ marker.addListener('click', function() {
+ 	tiscorniamap.setZoom(15);
+ 	tiscorniamap.setCenter(marker.getPosition());
+ });
+
 }
