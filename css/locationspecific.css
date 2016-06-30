@@ -119,13 +119,13 @@ font-size: 4em;
 }
 
 
-#weko img, #warren img, #silver img{
+#weko img, #warren img, #silver img, #tiscornia img{
   width: 300px;
   height: 280px;
 }
 
 
-#weko h1, #warren h1{
+#weko h1, #warren h1, #silver h1, #tiscornia h1{
 	text-align: center;
   font-size: 3em;
 }
@@ -136,7 +136,7 @@ font-size: 4em;
   color: #006cad;
 }
 
-#weko a, #warren a, #silver a{
+#weko a, #warren a, #silver a, #tiscornia a{
   font-size: 1.5em;
 }
 
@@ -158,7 +158,7 @@ font-size: 4em;
   font-size: 1.5em;
 }
 
-#weko-map, #warren-map, #silver-map{
+#weko-map, #warren-map, #silver-map, #tiscornia-map{
   width: 450px;
   height: 400px;
   background-color: #CCC;
