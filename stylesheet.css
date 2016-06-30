@@ -139,7 +139,6 @@ video{
 
 #mute-button, #volume-button{
   color: white;
-  padding-top: 700px;
   font-size: 40px;
 }
 
@@ -228,4 +227,16 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #C7C7C7;
+}
+
+
+@media (max-width: 767px) {
+
+  #welcome{
+    font-size:1.5em;
+  }
+
+    .navbar-default {
+    background-color: transparent;
+  }
 }

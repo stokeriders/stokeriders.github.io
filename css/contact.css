@@ -38,10 +38,10 @@ html {
 }
 .navbar-default .navbar-toggle {
   background-color: #C7C7C7;
-  border-color: #fed136;
+  border-color: #C7C7C7;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #C7C7C7;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
