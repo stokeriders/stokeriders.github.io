@@ -123,4 +123,35 @@
  	tiscorniamap.setCenter(marker.getPosition());
  });
 
+ //south haven
+
+  var autosouthh = new google.maps.places.Autocomplete(
+ 	(document.getElementById('autocomplete-southh')), {
+ 		types: ['geocode']
+ 	});
+
+ var southhdiv = document.getElementById('southh-map');
+ var southh = {lat: 42.4011652, lng: -86.2853616}
+
+ var southhmap = new google.maps.Map(southhdiv, {
+ 	center: southh,
+ 	zoom: 10
+ });
+
+ var marker = new google.maps.Marker({
+ 	position: southh,
+ 	map: southhmap
+ });
+
+ southhmap.addListener('center_changed', function() {
+ 	window.setTimeout(function() {
+ 		southhmap.panTo(marker.getPosition());
+ 	}, 5000);
+ });
+
+ marker.addListener('click', function() {
+ 	southhmap.setZoom(15);
+ 	southhmap.setCenter(marker.getPosition());
+ });
+
 }

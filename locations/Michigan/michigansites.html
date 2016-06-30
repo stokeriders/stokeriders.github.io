@@ -138,7 +138,7 @@
           <form action="http://maps.google.com/maps" method="get" target="_blank">
             <label for="saddr" class = "directions">Need directions? Where are you coming from?</label>
             <input id="autocomplete-tiscornia" type="text" name="saddr" class = "form-control" />
-            <input type="hidden" name="daddr" value="Acceptable Wind Directions: SW, W, NW, N" class = "form-control" />
+            <input type="hidden" name="daddr" value="80 Ridgeway Street St. Joseph, MI 49085" class = "form-control" />
             <input type="submit" value="Get directions" class = "btn btn-primary" />
           </form>
         </div>
@@ -146,11 +146,27 @@
     </div>
   </div>
 
-  <div id = "warren" class = "row">
-    <h3 id = "title" class = "col-lg-7 col-lg-7 col-lg-7"><a href = "http://www.southhaven.org/">South Haven</a></h3>
-    <img class = "img-circle img-responsive col-lg-4 col-lg-4 col-lg-4 pull-right" src = "imgs/southhaven.jpg">
-    <p class = "address col-lg-7 col-lg-7 col-lg-7">546 Phoenix Street South Haven, MI 49090</p>
-    <p class = "wind-dir col-lg-7 col-lg-7 col-lg-7">Acceptable Wind Directions: SSW, SW, W, NW, N</p>
+
+  <div class = "content-section-b" id = "southh">
+    <div class = "container">
+      <div class = "row">
+        <h3 id = "title" class = "col-lg-6 col-lg-6 col-lg-6"><a href = "http://www.south-haven.com/pages/beaches/beaches.html">South Beach</a></h3>
+        <div class = "col-lg-6 col-lg-6 col-lg-6 pull-right" id="southh-map"></div>
+        <p class = "address col-lg-6 col-lg-6 col-lg-6">60 Water St South Haven, MI 49090</p>
+        <p class = "wind-dir col-lg-6 col-lg-6 col-lg-6">Acceptable Wind Directions: SSW, SW, W, NW, N</p>
+        <img class = "img-circle img-responsive col-lg-3 col-lg-3 col-lg-3 pull-left" src = "imgs/southhaven.jpg">
+        <img class = "img-circle img-responsive col-lg-3 col-lg-3 col-lg-3 pull-left" src = "imgs/southbeach.jpg">
+
+        <div class = "col-lg-5 col-lg-5 col-lg-5 pull-right">
+          <form action="http://maps.google.com/maps" method="get" target="_blank">
+            <label for="saddr" class = "directions">Need directions? Where are you coming from?</label>
+            <input id="autocomplete-southh" type="text" name="saddr" class = "form-control" />
+            <input type="hidden" name="daddr" value="60 Water St South Haven, MI 49090" class = "form-control" />
+            <input type="submit" value="Get directions" class = "btn btn-primary" />
+          </form>
+        </div>
+      </div>     
+    </div>
   </div>
 
 
