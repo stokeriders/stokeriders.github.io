@@ -10,7 +10,7 @@ html {
 #welcome{
   color: #ffffff;
   font-family: 'Pacifico', cursive;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .navbar {  border: none!important; }
@@ -99,6 +99,9 @@ html {
   }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+  }
+  #welcome{
+    font-size:2.5em;
   }
 }
 
