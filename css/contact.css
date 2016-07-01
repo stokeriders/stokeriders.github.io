@@ -117,14 +117,16 @@ html {
   text-align: center;
 }
 
-#locations-info{
-  text-align: center;
+.press{
+  text-align:center;
+
 }
 
-#locations{
-  text-align: center;
-  margin-bottom: 50px;
+.img-responsive {
+  margin: 0 auto;
 }
+
+
 
 /*Footer*/
 
