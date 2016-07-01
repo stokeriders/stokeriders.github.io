@@ -33,7 +33,7 @@ function initMap() {
 
 	//miller
 
-		var automiller = new google.maps.places.Autocomplete(
+	var automiller = new google.maps.places.Autocomplete(
 		(document.getElementById('autocomplete-miller')), {
 			types: ['geocode']
 		});
@@ -122,6 +122,37 @@ function initMap() {
 	marker.addListener('click', function() {
 		mcbmap.setZoom(15);
 		mcbmap.setCenter(marker.getPosition());
+	});
+
+	//porter
+
+	var autoporter = new google.maps.places.Autocomplete(
+		(document.getElementById('autocomplete-porter')), {
+			types: ['geocode']
+		});
+
+	var porterdiv = document.getElementById('porter-map');
+	var porter = {lat: 41.6605371, lng: -87.0715695}
+
+	var portermap = new google.maps.Map(porterdiv, {
+		center: porter,
+		zoom: 10
+	});
+
+	var marker = new google.maps.Marker({
+		position: porter,
+		map: portermap
+	});
+
+	portermap.addListener('center_changed', function() {
+		window.setTimeout(function() {
+			portermap.panTo(marker.getPosition());
+		}, 5000);
+	});
+
+	marker.addListener('click', function() {
+		portermap.setZoom(15);
+		portermap.setCenter(marker.getPosition());
 	});
 
 }
