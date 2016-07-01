@@ -121,8 +121,6 @@ html {
   border-right: none;
   position: relative;
   padding-bottom: 56.25%;
-  background-image: url('img/homepage.jpg');
-  background-size: 100% 100%;
 }
 
 .video-container{
@@ -132,6 +130,8 @@ html {
   height: 100%;
   width: 100%;
   overflow: hidden;
+   background-image: url('img/homepage.jpg');
+  background-size: 100% 100%;
 }
 
 video{
@@ -238,10 +238,6 @@ ul.social-buttons li a:active {
 
   #welcome{
     font-size:1.5em;
-  }
-
-  .video-container{
-    display:none;
   }
 
     .navbar-default {
