@@ -123,13 +123,13 @@ font-size: 4em;
 }
 
 
-#weko img, #warren img, #silver img, #tiscornia img, #southh img, #casino img, #miller img, #lakes img, #mcb img, #porter img, #montrose img, #zion img{
+#weko img, #warren img, #silver img, #tiscornia img, #southh img, #casino img, #miller img, #lakes img, #mcb img, #porter img, #montrose img, #zion img, #wauk img{
   width: 300px;
   height: 280px;
 }
 
 
-#weko h1, #warren h1, #silver h1, #tiscornia h1, #southh h1, #casino h1, #miller h1, #lakes h1, #mcb h1, #porter h1, #montrose h1, #zion h1{
+#weko h1, #warren h1, #silver h1, #tiscornia h1, #southh h1, #casino h1, #miller h1, #lakes h1, #mcb h1, #porter h1, #montrose h1, #zion h1, #wauk h1{
 	text-align: center;
   font-size: 3em;
 }
@@ -140,7 +140,7 @@ font-size: 4em;
   color: #006cad;
 }
 
-#weko a, #warren a, #silver a, #tiscornia a, #southh a, #casino a, #miller a, #lakes a, #mcb a, #porter a, #montrose a, #zion a {
+#weko a, #warren a, #silver a, #tiscornia a, #southh a, #casino a, #miller a, #lakes a, #mcb a, #porter a, #montrose a, #zion a, #wauk a {
   font-size: 1.5em;
 }
 
@@ -162,7 +162,7 @@ font-size: 4em;
   font-size: 1.5em;
 }
 
-#weko-map, #warren-map, #silver-map, #tiscornia-map, #southh-map, #casino-map, #miller-map, #lakes-map, #mcb-map, #porter-map, #montrose-map, #zion-map{
+#weko-map, #warren-map, #silver-map, #tiscornia-map, #southh-map, #casino-map, #miller-map, #lakes-map, #mcb-map, #porter-map, #montrose-map, #zion-map, #wauk-map{
   width: 450px;
   height: 400px;
   background-color: #CCC;

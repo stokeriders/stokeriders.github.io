@@ -62,4 +62,35 @@ function initMap() {
 		zionmap.setCenter(marker.getPosition());
 	});
 
+	//Wauk
+
+				var autowauk = new google.maps.places.Autocomplete(
+		(document.getElementById('autocomplete-wauk')), {
+			types: ['geocode']
+		});
+
+	var waukdiv = document.getElementById('wauk-map');
+	var wauk = {lat: 42.3628605, lng: -87.8171834}
+
+	var waukmap = new google.maps.Map(waukdiv, {
+		center: wauk,
+		zoom: 10
+	});
+
+	var marker = new google.maps.Marker({
+		position: wauk,
+		map: waukmap
+	});
+
+	waukmap.addListener('center_changed', function() {
+		window.setTimeout(function() {
+			waukmap.panTo(marker.getPosition());
+		}, 5000);
+	});
+
+	marker.addListener('click', function() {
+		waukmap.setZoom(15);
+		waukmap.setCenter(marker.getPosition());
+	});
+
 }
