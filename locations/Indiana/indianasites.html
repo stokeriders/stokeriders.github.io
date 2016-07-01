@@ -80,6 +80,28 @@
     </div>
   </div>
 
+    <div class = "content-section-a" id = "miller">
+    <div class = "container">
+      <div class = "row">
+        <h3  id = "title" class = "col-lg-6 col-lg-6 col-lg-6"><a href = "https://en.wikipedia.org/wiki/Miller_Beach">Miller Beach (Marquette Park</a></h3>
+        <div class = "col-lg-6 col-lg-6 col-lg-6 pull-right" id="miller-map"></div>
+        <p class = "address col-lg-6 col-lg-6 col-lg-6">1 N Grand Blvd, Gary, IN 46403</p>
+        <p class = "wind-dir col-lg-6 col-lg-6 col-lg-6">Acceptable Wind Directions: W, NW, N, NE, E</p>
+        <img class = "img-circle img-responsive col-lg-3 col-lg-3 col-lg-3 pull-left" src = "imgs/miller-beach.jpg">
+        <img class = "img-circle img-responsive col-lg-3 col-lg-3 col-lg-3 pull-left" src = "imgs/mb.jpg">
+
+        <div class = "col-lg-5 col-lg-5 col-lg-5 pull-right">
+          <form action="http://maps.google.com/maps" method="get" target="_blank">
+            <label for="saddr" class = "directions">Need directions? Where are you coming from?</label>
+            <input id="autocomplete-miller" type="text" name="saddr" class = "form-control" />
+            <input type="hidden" name="daddr" value="1 N Grand Blvd, Gary, IN 46403" class = "form-control" />
+            <input type="submit" value="Get directions" class = "btn btn-primary" />
+          </form>
+        </div>
+      </div>     
+    </div>
+  </div>
+
 
   <footer>
     <div class="container">
