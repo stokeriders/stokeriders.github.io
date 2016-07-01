@@ -245,22 +245,22 @@ ul.social-buttons li a:active {
   }
 
   h1{
-    font-size:2.5em;
-  }
-
-  h2{
     font-size:2em;
   }
 
-  h3{
-    font-size: 1.5em;
+  h2{
+    font-size:1.5em;
   }
 
-  h4{
-    font-size:1em;
+  h3{
+    font-size: 1em;
+  }
+
+  h4, .phone{
+    font-size:.75em;
   }
 
   p{
-    font-size:.75em;
+    font-size:.5em;
   }
 }
