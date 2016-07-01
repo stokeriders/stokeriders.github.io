@@ -62,4 +62,35 @@ function initMap() {
 		millermap.setCenter(marker.getPosition());
 	});
 
+	//lake street
+
+	var autolakes = new google.maps.places.Autocomplete(
+		(document.getElementById('autocomplete-lakes')), {
+			types: ['geocode']
+		});
+
+	var lakesdiv = document.getElementById('lakes-map');
+	var lakes = {lat: 41.6188986, lng: -87.2709974}
+
+	var lakesmap = new google.maps.Map(lakesdiv, {
+		center: lakes,
+		zoom: 10
+	});
+
+	var marker = new google.maps.Marker({
+		position: lakes,
+		map: lakesmap
+	});
+
+	lakesmap.addListener('center_changed', function() {
+		window.setTimeout(function() {
+			lakesmap.panTo(marker.getPosition());
+		}, 5000);
+	});
+
+	marker.addListener('click', function() {
+		lakesmap.setZoom(15);
+		lakesmap.setCenter(marker.getPosition());
+	});
+
 }
