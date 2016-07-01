@@ -13,6 +13,8 @@ html {
   font-size: 5em;
 }
 
+.navbar {  border: none!important; }
+
 .navbar-default {
   background-color:black;
   padding: 25px 0;
@@ -38,10 +40,10 @@ html {
 }
 .navbar-default .navbar-toggle {
   background-color: #C7C7C7;
-  border-color: #fed136;
+  border-color: #C7C7C7;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #C7C7C7;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -98,6 +100,9 @@ html {
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
+    #welcome{
+    font-size:2.5em;
+  }
 }
 
 /*Navbar end*/
@@ -152,4 +157,12 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #C7C7C7;
+}
+
+@media (max-width: 767px) {
+
+  #welcome{
+    font-size:1.5em;
+  }
+
 }

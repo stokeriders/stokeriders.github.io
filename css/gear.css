@@ -10,8 +10,10 @@ html {
 #welcome{
   color: #ffffff;
   font-family: 'Pacifico', cursive;
-  font-size: 5em;
+  font-size: 4em;
 }
+
+.navbar {  border: none!important; }
 
 .navbar-default {
   background-color:black;
@@ -33,15 +35,17 @@ html {
 .navbar-default .navbar-brand.active {
   color: #C7C7C7;
 }
+
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
+
 .navbar-default .navbar-toggle {
   background-color: #C7C7C7;
-  border-color: #fed136;
+  border-color: #C7C7C7;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #C7C7C7;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -98,10 +102,14 @@ html {
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
+    #welcome{
+    font-size:2.5em;
+  }
 }
 
-
-
+#gear-shop{
+  padding-top: 150px;
+}
 
 footer {
   margin-top: 25px;
@@ -149,4 +157,21 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #C7C7C7;
+}
+
+
+@media (max-width: 767px) {
+
+  #welcome{
+    font-size:1.5em;
+  }
+
+  .purchase{
+    text-align:center;
+  }
+
+  .lead{
+    font-size: 2.5em;
+    text-align:center;
+  }
 }
