@@ -1,5 +1,6 @@
 <html>
 <head>
+
   <title>StokeRiders</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/locationspecific.css"> 
-  
+  <link rel="stylesheet" type="text/css" href="../../css/locationspecific.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:900' rel='stylesheet' type='text/css'>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_nlg2LnVILXhWwDEmRwnhJzPWBXoU0no&callback=initMap&libraries=places">
+  </script>
+  <script type="text/javascript" src="../../js/chicagomaps.js"></script>
 </head>
 <body>
 
@@ -29,28 +34,52 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav nav-pills navbar-nav navbar-right">
           <li>
-              <a href="index.html#services">Services</a>
+            <a href="index.html#services">Services</a>
+          </li>
+          <li >
+            <a href="../../gear.html">Gear</a>
+          </li>
+          <li>
+            <a href="../../meet.html">Meet Tyler</a>
           </li>
           <li class = "active">
-              <a href="gear.html">Gear</a>
+            <a href="../../locations.html">Where to Ride</a>
           </li>
           <li>
-              <a href="meet.html">Meet Tyler</a>
-          </li>
-          <li>
-            <a href="locations.html">Locations</a>
-          </li>
-          <li>
-              <a href="contact.html">Contact</a>
+            <a href="../../contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div id = "locat-container" class = "container">
-  	<h1> Montrose Beach </h1>
+  <div id = "welcome-state" class = "container">
+    <a href = "../../locations.html"><i class = "glyphicon glyphicon-arrow-left"></i> Back to Locations</a>
+    <h1> Welcome to <span>Chicago</span>! </h1>
   </div>
+
+  <div class = "content-section-b" id = "montrose">
+    <div class = "container">
+      <div class = "row">
+        <h3  id = "title" class = "col-lg-6 col-lg-6 col-lg-6"><a href = "http://www.cpdbeaches.com/beaches/Montrose-Beach/">Montrose Beach</a></h3>
+        <div class = "col-lg-6 col-lg-6 col-lg-6 pull-right" id="montrose-map"></div>
+        <p class = "address col-lg-6 col-lg-6 col-lg-6">4400 N Lake Shore Dr, Chicago, IL 60640</p>
+        <p class = "wind-dir col-lg-6 col-lg-6 col-lg-6">Acceptable Wind Directions: NNW, N, NE, E, SE</p>
+        <img class = "img-circle img-responsive col-lg-3 col-lg-3 col-lg-3 pull-left" src = "imgs/montrose-beach.jpg">
+        <img class = "img-circle img-responsive col-lg-3 col-lg-3 col-lg-3 pull-left" src = "imgs/mrb.jpg">
+
+        <div class = "col-lg-5 col-lg-5 col-lg-5 pull-right">
+          <form action="http://maps.google.com/maps" method="get" target="_blank">
+            <label for="saddr" class = "directions">Need directions? Where are you coming from?</label>
+            <input id="autocomplete-montrose" type="text" name="saddr" class = "form-control" />
+            <input type="hidden" name="daddr" value="4400 N Lake Shore Dr, Chicago, IL 60640" class = "form-control" />
+            <input type="submit" value="Get directions" class = "btn btn-primary" />
+          </form>
+        </div>
+      </div>     
+    </div>
+  </div>
+
 
   <footer>
     <div class="container">
