@@ -93,4 +93,35 @@ function initMap() {
 		lakesmap.setCenter(marker.getPosition());
 	});
 
+	// michigan beach
+
+	var automcb = new google.maps.places.Autocomplete(
+		(document.getElementById('autocomplete-mcb')), {
+			types: ['geocode']
+		});
+
+	var mcbdiv = document.getElementById('mcb-map');
+	var mcb = {lat: 41.7294029, lng: -86.9271301}
+
+	var mcbmap = new google.maps.Map(mcbdiv, {
+		center: mcb,
+		zoom: 10
+	});
+
+	var marker = new google.maps.Marker({
+		position: mcb,
+		map: mcbmap
+	});
+
+	mcbmap.addListener('center_changed', function() {
+		window.setTimeout(function() {
+			mcbmap.panTo(marker.getPosition());
+		}, 5000);
+	});
+
+	marker.addListener('click', function() {
+		mcbmap.setZoom(15);
+		mcbmap.setCenter(marker.getPosition());
+	});
+
 }

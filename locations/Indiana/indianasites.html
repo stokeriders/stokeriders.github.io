@@ -124,6 +124,28 @@
     </div>
   </div>
 
+   <div class = "content-section-b" id = "mcb">
+    <div class = "container">
+      <div class = "row">
+        <h3  id = "title" class = "col-sm-6 col-md-6 col-lg-6"><a href = "http://michigancityparks.com/index.php/washington-park-and-beach">Michigan City Beach</a></h3>
+        <div class = "col-sm-6 col-lg-6 col-lg-6 pull-right" id="mcb-map"></div>
+        <p class = "address col-sm-6 col-md-6 col-lg-6">2 On the Lake, Michigan City, IN 46360</p>
+        <p class = "wind-dir col-sm-6 col-md-6 col-lg-6">Acceptable Wind Directions: WSW, W, NW, N, NE</p>
+        <img class = "img-circle img-responsive col-sm-3 col-md-3 col-lg-3 pull-left" src = "imgs/mbc.jpg">
+        <img class = "img-circle img-responsive col-sm-3 col-md-3 col-lg-3 pull-left" src = "imgs/mbcsunset.jpg">
+
+        <div class = "col-sm-5 col-md-5 col-lg-5 pull-right">
+          <form action="http://maps.google.com/maps" method="get" target="_blank">
+            <label for="saddr" class = "directions">Need directions? Where are you coming from?</label>
+            <input id="autocomplete-mcb" type="text" name="saddr" class = "form-control" />
+            <input type="hidden" name="daddr" value="2 On the Lake, Michigan City, IN 46360" class = "form-control" />
+            <input type="submit" value="Get directions" class = "btn btn-primary" />
+          </form>
+        </div>
+      </div>     
+    </div>
+  </div>
+
 
   <footer>
     <div class="container">
